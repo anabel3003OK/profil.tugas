@@ -1,0 +1,168 @@
+/* --- Style untuk Landing Page Abel --- */
+/* Dibuat: Januari 2024 */
+
+:root {
+    --gelap: #1a202c;
+    --aksen: #4a90e2;
+    --teks: #4a5568;
+    --putih: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5;
+    color: var(--teks);
+}
+
+/* Bagian Header & Menu */
+.main-header {
+    background: var(--gelap);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav ul li a {
+    color: #a0aec0;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #fff;
+}
+
+/* Layout Utama */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    gap: 25px;
+    padding: 0 15px;
+}
+
+/* Bagian Kiri */
+.main-content {
+    flex: 2;
+}
+
+.hero-section {
+    background: linear-gradient(to bottom right, #3498db, #2c3e50);
+    color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background: #f39c12;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.about-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+}
+
+/* Bagian Kanan (Sidebar) */
+.sidebar {
+    flex: 1;
+}
+
+.profile-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px; /* Tidak bulat sempurna agar unik */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    background: var(--gelap);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.skills-list h4 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.skills-list ul {
+    padding-left: 15px;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
+
+/* Bagian Bawah */
+.main-footer {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+#contact h4 { margin-bottom: 10px; }
+
+/* Responsive sederhana */
+@media (max-width: 768px) {
+    .container { flex-direction: column; }
+    .header-content { flex-direction: column; text-align: center; }
+    .main-nav { margin-top: 10px; }
+}
